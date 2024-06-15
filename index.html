@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        img {
+            vertical-align: middle;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="restomenu.css">
+</head>
+<body>
+
+<header>
+<img src="todo-kain-resto-high-resolution-logo.png" style="width:300px;">
+    <div class="button-container">
+           <button><b onclick="scrollToSection('main-dishes')">MAIN DISH</b></button>
+           <button><b onclick="scrollToSection('vegetables')">VEGETABLES</b></button>
+           <button><b onclick="scrollToSection('desserts')">DESSERTS</b></button>
+           <button><b onclick="scrollToSection('drinks')">DRINKS</b></button>
+           <button><b onclick="scrollToSection('add-ons')">ADD-ONS</b></button>
+       </div>
+   </header>
+   <div class="resto">
+       <div class="menu">
+           <div class="menulist">MENU</div>
+
+   <div class="container1">
+       <section id="main-dishes" class="menu-section">
+           <h2>MAIN DISH</h2>
+           <div class="menu-item">
+               <img src="kare-kare.jpg" alt="Kare-Kare">
+               <h3>Kare-Kare</br>90.00</h3>
+               <button style="
+
+               margin-left: 390px;
+               margin-right: 5px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Kare-Kare', 90.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="Lumpiang-Shanghai-640x426.jpg" alt="Lumpiang-Shanghai">
+               <h3>Lumpiang-Shanghai</br>45.00 (4 pieces)</h3>
+               <button style="
+
+                  margin-left: 240px;
+               margin-right: 5px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Lumpiang-Shanghai', 45.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="pork-binagoongan-recipe-card.jpg" alt="Pork Binagoongan">
+               <h3>Pork Binagoongan</br>100.00</h3>
+               <button style="
+
+               margin-left: 270px;
+               margin-right: 5px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Pork Binagoongan', 100.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="Pork-Sisig.jpg" alt="Pork Sisig">
+               <h3>Pork Sisig</br>120.00</h3>
+               <button style="
+
+               margin-left: 390px;
+               margin-right: 5px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Pork Sisig', 120.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="chicken inasal.jpg" alt="Chicken Inasal">
+               <h3>Chicken Inasal</br>150.00</h3>
+               <button style="
+
+                margin-left: 320px;
+               margin-right: 5px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Chicken Inasal', 150.00)">Add to Order</order></button>
+           </div>
+       </section>
+
+       <section id="vegetables" class="menu-section">
+           <h2>VEGETABLES</h2>
+           <div class="menu-item">
+               <img src="ginataang-kalabasa-with-sitaw-and-shrimp.jpg" alt="Ginataang Kalabasa with Sitaw and Shrimp">
+               <h3>Ginataang Kalabasa with Sitaw and Shrimp</br>190.00</h3>
+               <button style="
+
+               margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Ginataang Kalabasa with Sitaw and Shrimp', 190.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="garlic-tokwa-and-kangkong-recipe-730x1131.jpg" alt="Garlic Tokwa and Kangkong">
+               <h3>Garlic Tokwa and Kangkong</br>180.00</h3>
+               <button style="
+
+            margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+            
+             "><order onclick="addToOrder('Garlic Tokwa and Kangkong', 180.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="monggo.png" alt="Monggo">
+               <h3>Monggo</br>35.00</h3>
+               <button style="
+
+              margin-left: 450px;
+               margin-right: 80px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Monggo', 130.00)">Add to Order</order></button>
+           </div>
+       </section>
+
+       <section id="desserts" class="menu-section">
+           <h2>DESSERTS</h2>
+           <div class="menu-item">
+               <img src="Mais con yelo.png" alt="Mais con yelo">
+               <h3>Mais con yelo</br>80.00</h3>
+               <button style="
+
+                 margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Mais con yelo', 80.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="Ice Scramble.png" alt="Ice Scramble">
+               <h3>Ice Scramble</br>60.00</h3>
+               <button style="
+
+                margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Ice Scramble', 60.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="Majablanca.jpg" alt="Maja Blanca">
+               <h3>Maja Blanca</br>95.00</h3>
+               <button style="
+
+                margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Maja Blanca', 95.00)">Add to Order</order></button>
+           </div>
+       </section>
+
+       <section id="drinks" class="menu-section">
+           <h2>DRINKS</h2>
+           <div class="menu-item">
+               <img src="melon juice.jpg" alt="Melon Juice">
+               <h3>Melon Juice</br>75.99</h3>
+               <button style="
+
+               margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Melon Juice', 75.99)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="watermelon juice.jpg" alt="Watermelon Juice">
+               <h3>Watermelon Juice</br>75.99</h3>
+               <button style="
+
+               margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Watermelon Juice', 75.99)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="avocado shake.png" alt="Avocado Shake">
+               <h3>Avocado Shake</br>75.99</h3>
+               <button style="
+
+               margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Avocado Shake', 75.99)">Add to Order</order></button>
+           </div>
+       </section>
+
+       <section id="add-ons" class="menu-section">
+           <h2>ADD-ONS</h2>
+           <div class="menu-item">
+               <img src="ice cream.jpg" alt="Ice Cream">
+               <h3>Ice Cream</br>55.00</h3>
+               <button style="
+
+              margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Ice Cream', 55.00)">Add to Order</order></button>
+
+           </div>
+           <div class="menu-item">
+               <img src="Fried Galunggong.jpg" alt="Fried Galunggong">
+               <h3>Fried Galunggong</br>50.00</h3>
+               <button style="
+
+             margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Fried Galunggong', 50.00)">Add to Order</order></button>
+           </div>
+           <div class="menu-item">
+               <img src="atchara.jpg" alt="Atchara">
+               <h3>Atchara</br>30.00</h3>
+               <button style="
+
+              margin-left: 380px;
+               margin-right: 60px;
+               margin-top: 60px;
+            
+             "><order onclick="addToOrder('Atchara', 30.00)">Add to Order</order></button>
+           </div>
+       </section>
+   </div>
+   <div class="order-container">
+    <h2>Your Order</h2>
+    <ul style="font-family:rockwell; font-size:25px;color:#77dd77;" id="order-list"></ul>
+    <div style="font-family:rockwell; font-size:30px; color:#f8f7a6;" id="total">Total: ₱0.00</div>
+</div>
+</div>
+</div>
+
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+    }
+    const orderList = [];
+    let totalAmount = 0;
+
+    function addToOrder(itemName, itemPrice) {
+        orderList.push({ name: itemName, price: itemPrice });
+        totalAmount += itemPrice;
+        updateOrderDisplay();
+    }
+
+    function updateOrderDisplay() {
+        const orderListElement = document.getElementById('order-list');
+        const totalElement = document.getElementById('total');
+
+        orderListElement.innerHTML = '';
+        orderList.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${item.name} - ₱${item.price.toFixed(2)}`;
+            orderListElement.appendChild(listItem);
+        });
+
+        totalElement.textContent = `Total: ₱${totalAmount.toFixed(2)}`;
+    }
+</script>
+
+</body>
+</html>
